@@ -60,17 +60,22 @@ Este servidor compila los archivos y recarga el navegador automáticamente, solo
 ## **Optimización y despliegue**
 
 ### **Actualizar el archivo `tailwind.config.js`**
-*Atención: Esto solo debes hacerlo cuando ya estes a punto de subirlo a tú página de GitHub* 
+*Atención: Esto solo debes hacerlo cuando ya estes a punto de subirlo a tú página de GitHub, de otro modo NO lo añadas.*
+
+Recuerda que si vas a volver a editar tú página, debes remover el codigo de purge y regresarlo a como está más arriba, de lo contrario el servidor de desarrollo tardará en recargar la página. 
 
 Agrega esto dentro del archivo:
 
 ```javascript
 // tailwind.config.js
   module.exports = {
-   purge: [
-     './*.html',
-     './src/*.js',
-   ],
+   purge: {
+      enabled: true,
+      content: [
+        './src/*.html',
+        './src/*.js',
+     ]
+   },
     darkMode: false, // or 'media' or 'class'
     theme: {
       extend: {},
