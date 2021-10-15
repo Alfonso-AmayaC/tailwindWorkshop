@@ -1,4 +1,4 @@
-# Aprendiendo sobre TailWindCSS
+# Aprendiendo sobre tailwindcss
 
 ¡Hola! Los siguientes comandos te enseñarán a instalar TailwindCSS en tú proyecto y a como optimizarlo para producción (se utiliza webpack como compilador y empaquetador del código, no es necesario saber nada de él para este taller).
 Recuerda tener instalado [Git](https://git-scm.com/) y [Node.js](https://nodejs.org/es/) en tú computadora.
