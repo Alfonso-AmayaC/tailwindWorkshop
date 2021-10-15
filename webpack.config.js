@@ -35,7 +35,7 @@ module.exports = {
             filename:'index.html'
         }),
         new MiniCssExtractPlugin({
-            filename:'index.bundle.css',
+            filename:'index.[contenthash].css',
         })
     ],
     optimization:{
