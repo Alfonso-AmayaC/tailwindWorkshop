@@ -1,5 +1,7 @@
 var path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin')
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     context:__dirname,
@@ -19,18 +21,26 @@ module.exports = {
         compress: true,
         port: 9000,
     },
-    plugins:[
-        new HTMLWebpackPlugin({
-            template:'./index.html',
-            filename:'index.html'
-        })
-    ],
     module:{
         rules:[
             {
                 test:/\.css$/i,
-                use: ['style-loader','css-loader']
+                use: [MiniCssExtractPlugin.loader,'css-loader']
             },
+        ],
+    },
+    plugins:[
+        new HTMLWebpackPlugin({
+            template:'./index.html',
+            filename:'index.html'
+        }),
+        new MiniCssExtractPlugin({
+            filename:'index.bundle.css',
+        })
+    ],
+    optimization:{
+        minimizer:[
+            new CssMinimizerPlugin(),
         ],
     },
 };

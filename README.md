@@ -12,11 +12,11 @@ De igual forma, si quieres conocer más  sobre TailwindCSS, anímate a ver la [d
 ```console
 > npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 ```
-La bandera **-D** significa que los instalara como dependecias de tú proyecto, es decir, que son necesarias para que funcione.
+La bandera **-D** significa que los instalará como dependecias de desarrollo de tú proyecto, es decir, que son necesarias para trabajar con este al momento de realizar alguna modificación o actualización.
 
 ### **Añade Tailwind como un plugin de PostCSS**
 
-Crea en tu directorio principal, el archivo `postcss.config.js` con el siguiente contenido:
+Crea, en tu directorio principal, el archivo `postcss.config.js` con el siguiente contenido:
 ```javascript
 // postcss.config.js
 module.exports = {
@@ -54,12 +54,12 @@ module.exports = {
 ```console
 > npm start
 ```
-Este servidor compila los archivos y recarga el navegar automáticamente, solo es necesario guardar el archivo en tú editor de código.
+Este servidor compila los archivos y recarga el navegador automáticamente, solo es necesario guardar el archivo en tú editor de código.
 
 ----------
 ## **Optimización y despliegue**
 
-### **Actualizar el archivo *tailwind.config.js***
+### **Actualizar el archivo `tailwind.config.js`**
 *Atención: Esto solo debes hacerlo cuando ya estes a punto de subirlo a tú página de GitHub* 
 
 Agrega esto dentro del archivo:
