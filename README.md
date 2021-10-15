@@ -94,4 +94,4 @@ Lo anterior se encarga de comprimir y generar el código para distribución y lo
 
 Y eso ha sido todo!! Espero te resulte útil ese repo y si notaste alguna falla o consideras que se puede agregar algo, has un fork, actualiza lo necesario y has un pull request :D
 
-Hecho con <3 por @Alfonso-AmayaC
+Hecho con ♥️ por @Alfonso-AmayaC
