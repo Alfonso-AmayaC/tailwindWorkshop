@@ -14,7 +14,7 @@ De igual forma, si quieres conocer más  sobre TailwindCSS, anímate a ver la [d
 ```
 La bandera **-D** significa que los instalará como dependecias de desarrollo de tú proyecto, es decir, que son necesarias para trabajar con este al momento de realizar alguna modificación o actualización.
 
-### **Añade Tailwind como un plugin de PostCSS**
+### **Añade tailwind como un plugin de PostCSS**
 
 Crea, en tu directorio principal, el archivo `postcss.config.js` con el siguiente contenido:
 ```javascript
